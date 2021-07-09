@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+﻿package com.example.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,7 +13,8 @@ public class HelloController {
 	@GetMapping("/hello")
 	public String hello(Model model) {
 		model.addAttribute("name", "홍길동");
-		//팀장이 주석 답니다
+
+		//팀장과 hong이 주석 답니다
 		return "hello"; // => templates/hello.html
 	}
 	
